@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
+const mapDispatchToProps = dispatch => {
+  return {
+    addTodo: () => dispatch(<some action>)
+  }
+}
  
 class CreateTodo extends Component {
  
